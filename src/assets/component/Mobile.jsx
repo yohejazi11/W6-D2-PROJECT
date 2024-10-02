@@ -6,7 +6,7 @@ function Mobile(props) {
 
 
     return (
-        <div className='w-[15vw] h-[60vh]  rounded-[15px] border-[8px] border-slate-900 ' >
+        <div className='w-[15vw] h-[60vh] max-md:w-[80vw] max-md:h-[80vw] rounded-[15px] border-[8px] border-slate-900 ' >
             <div className='h-[100%] bg-cover rounded-[5px] bg-[url("https://i.pinimg.com/564x/8e/45/ca/8e45caeaae8ad3698d0f1768e8e3b6eb.jpg")]'>
                 {/* show text div */}
                 <div className='flex flex-col-reverse gap-y-[1rem]  h-[90%] w-full px-[5px] overflow-y-auto overflow-x-hidden  '>
@@ -14,7 +14,7 @@ function Mobile(props) {
                         <div className="flex flex-col" style={{ "alignSelf": e.user == userName ? `start` : `end` }} key={i}>
                             <div className="text-[0.8rem] text-white font-bold px-[5px] mb-[2px]" style={{ "alignSelf": e.user == userName ? `start` : `end` }}>{e.user}</div>
                             <div
-                                className="text-center  rounded-[20px] px-[5px] py-[2px] max-w-[12vw]  text-white"
+                                className="text-center  rounded-[20px] px-[5px] py-[2px] max-w-[12vw] max-md:max-w-[70vw]  text-white"
                                 style={{
                                     background: e.user == userName
                                         ? `linear-gradient(90deg, rgba(2,147,23,1) 1%, rgba(9,120,121,1) 51%)`

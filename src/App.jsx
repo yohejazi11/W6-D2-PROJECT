@@ -72,11 +72,11 @@ function App() {
 
 
   return (
-    <div className='flex w-full h-screen justify-evenly bg-[url("https://i.pinimg.com/564x/3d/0f/f9/3d0ff9cf6ea752477bd102e4f262a2d3.jpg")]'>
-      <div className='flex w-[55%] h-screen items-center justify-evenly relative'>
+    <div className='flex w-[100%] h-[100%] max-md:flex-col-reverse max-md:items-center justify-evenly pt-[10vh] bg-[url("https://i.pinimg.com/564x/3d/0f/f9/3d0ff9cf6ea752477bd102e4f262a2d3.jpg")]'>
+      <div className='flex w-[55%] h-screen max-md:w-[90vw] max-md:flex-col-reverse gap-y-[2rem] items-center justify-evenly relative'>
         <div className='relative'>
-          <div className='w-[15vw] h-[60vh] rounded-[15px] border-[8px] border-slate-900 z-50 absolute bg-slate-800 flex flex-col justify-center items-center gap-y-[1rem]' style={{ "display": isViseble1 ? `flex` : `none` }}>
-            <h1 className='text-[2rem] font-bold text-white'>ChatEase</h1>
+          <div className='w-[15vw]  max-md:h-[80vw] max-md:w-[80vw] h-[60vh] rounded-[15px] border-[8px] border-slate-900 z-50 absolute bg-slate-800 flex flex-col justify-center items-center gap-y-[1rem]' style={{ "display": isViseble1 ? `flex` : `none` }}>
+            <h1 className='text-[2rem] font-bold text-white max-md:text-[1.5rem]'>ChatEase</h1>
             <input className=" w-[90%] rounded-[5px] p-[5px]" type='text' placeholder='Enter your name' value={userOneName} onChange={(e) => { setName1(e.target.value) }}></input>
             <button className="w-[90%] rounded-[5px] px-[5px] text-white" style={{ background: 'linear-gradient(90deg, rgba(2,147,70,1) 1%, rgba(9,83,121,1) 100%)' }} onClick={pushName1}>enter</button>
           </div>
@@ -98,8 +98,8 @@ function App() {
 
         {/* mobile two start div */}
         <div className='relative'>
-          <div className='w-[15vw] h-[60vh] rounded-[15px] border-[8px] border-slate-900 z-50 absolute bg-slate-800 flex flex-col justify-center items-center	gap-y-[1rem]' style={{ "display": isViseble2 ? `flex` : `none` }}>
-            <h1 className='text-[2rem] font-bold text-white'>ChatEase</h1>
+          <div className='w-[15vw] max-md:w-[80vw] max-md:h-[80vw] h-[60vh] rounded-[15px] border-[8px] border-slate-900 z-50 absolute bg-slate-800 flex flex-col justify-center items-center	gap-y-[1rem]' style={{ "display": isViseble2 ? `flex` : `none` }}>
+            <h1 className='text-[2rem] font-bold text-white max-md:text-[1.5rem]'>ChatEase</h1>
             <input className=" w-[90%] rounded-[5px] p-[5px]" placeholder='Enter your name' type='text' value={userTwoName} onChange={(e) => { setName2(e.target.value) }}></input>
             <button className="w-[90%] rounded-[5px] px-[5px] text-white" style={{ background: 'linear-gradient(90deg, rgba(2,147,70,1) 1%, rgba(9,83,121,1) 100%)' }} onClick={pushName2}>enter</button>
           </div>
@@ -115,7 +115,7 @@ function App() {
 
       </div>
 
-      <div className='w-[40%] text-white text-[25px] flex flex-col justify-center text-center'>
+      <div className='w-[40%] max-md:w-[80%] text-white text-[25px] flex flex-col justify-center text-center'>
         <h1 className='text-[3rem] font-bold'>ChatEase</h1>
         <p>Try ChatEase for quick and easy user-to-user chats! Stay connected, share ideas, and enjoy seamless communication in a secure environment. Join now and experience effortless conversations!</p>
       </div>
